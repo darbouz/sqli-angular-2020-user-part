@@ -11,10 +11,11 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   imports:      [ BrowserModule, HttpClientModule ],
-  declarations: [ AppComponent, UserComponent, AlertSuccessComponent, AlertErrorComponent, TimerComponent, LoginComponent, NavbarComponent ],
+  declarations: [ AppComponent, UserComponent, AlertSuccessComponent, AlertErrorComponent, TimerComponent, LoginComponent, NavbarComponent, UserFormComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService]
 })
