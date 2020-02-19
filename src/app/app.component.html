@@ -1,0 +1,45 @@
+<app-navbar [user]="user"></app-navbar>
+
+<app-login *ngIf="!isAuthenticated()" (submit)="onLogin($event)"></app-login>
+
+<div *ngIf="isAuthenticated()">
+	My application
+</div>
+
+<!-- <navbar></navbar>
+<app-login></app-login
+
+
+<!-- {{ users | json }} -->
+
+<!-- <div *ngIf="users.length === 0">
+	No elements
+</div>
+
+<div *ngFor="let user of users">
+	<app-user (userClick)="onUserClick($event)" [user]="user"></app-user>
+</div>
+
+
+<button (click)="onCompClick($event)">Submit</button> -->
+
+<!-- 
+<div [ngClass]="myClass">
+	Test of ngClass
+</div> -->
+
+
+<!-- <img src="{{url}}" />
+<img [src]="url" />
+
+<img src="http://sdfdsf" />
+<img [src]="'http://sdfdsf'" />
+
+<img [src]="getUrl()" />
+
+<p [textContent]="url"></p>
+
+<app-timer></app-timer>
+
+<app-alert-error></app-alert-error>
+<app-alert-success></app-alert-success> -->
